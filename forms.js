@@ -23,6 +23,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     });
 });
 
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('loginUsername').value;
