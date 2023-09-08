@@ -40,6 +40,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         if (data.token) {
             localStorage.setItem('jwtToken', data.token);
             showSuccess('Inicio de sesión exitoso.');
+            console.log('JWT Token:', data.token);
         } else {
             showError(data.message);
         }
